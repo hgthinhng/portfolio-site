@@ -1,8 +1,8 @@
 {
   "hero": {
-    "headline": "Hầu hết các nhà phân tích đọc thị trường. Tôi xây dựng một hệ thống đọc toàn bộ — hàng ngày, trên 130 cổ phiếu Việt Nam.",
+    "headline": "Hầu hết các nhà phân tích đọc thị trường. Tôi xây dựng một hệ thống đọc toàn bộ - hàng ngày, trên 130 cổ phiếu Việt Nam.",
     "kicker": "Nhà phân tích đầu tư · Kiến trúc sư hệ thống · Tư vấn AI · Giảng viên tài chính",
-    "bridge": "Phân tích cơ bản → nền tảng nghiên cứu tự xây → AI doanh nghiệp → giảng dạy sau đại học. Tôi di chuyển xuyên suốt cả bốn lĩnh vực — nhanh chóng.",
+    "bridge": "Phân tích cơ bản → nền tảng nghiên cứu tự xây → AI doanh nghiệp → giảng dạy sau đại học. Tôi di chuyển xuyên suốt cả bốn lĩnh vực - nhanh chóng.",
     "cta1": "Xem nghiên cứu",
     "cta2": "Liên hệ"
   },
@@ -11,7 +11,7 @@
     "title": "Năng lực",
     "analyze": {
       "title": "Phân tích",
-      "line": "Nghiên cứu cơ bản + vĩ mô trên cổ phiếu Việt Nam — hệ thống hóa, không ad hoc.",
+      "line": "Nghiên cứu cơ bản + vĩ mô trên cổ phiếu Việt Nam - hệ thống hóa, không ad hoc.",
       "metric": "130 mã · pipeline hàng ngày",
       "cta": "Xem nghiên cứu"
     },
@@ -57,17 +57,17 @@
   "aiSolutions": {
     "label": "Giải pháp AI",
     "title": "Ứng dụng AI",
-    "intro": "Từ tư vấn doanh nghiệp đến nền tảng sản xuất — AI ứng dụng trong tài chính, giáo dục và quy trình nghiên cứu."
+    "intro": "Từ tư vấn doanh nghiệp đến nền tảng sản xuất: AI ứng dụng trong tài chính, giáo dục và quy trình nghiên cứu."
   },
   "teach": {
     "label": "Giảng dạy",
     "title": "Giáo dục tài chính",
-    "intro": "Thu hẹp khoảng cách giữa kiến thức tài chính tổ chức và học tập tiếp cận — tác giả giáo trình, người xây dựng nền tảng và giảng viên."
+    "intro": "Thu hẹp khoảng cách giữa kiến thức tài chính tổ chức và học tập dễ tiếp cận: tác giả giáo trình, người xây dựng nền tảng và giảng viên."
   },
   "about": {
     "label": "Về tôi",
     "title": "Nhà đầu tư · Kiến trúc sư",
-    "story": "Hầu hết các nhà phân tích đầu tư dừng lại ở phân tích. Tôi xây dựng các hệ thống giúp phân tích trở nên khả thi — rồi quay lại và thực hiện phân tích."
+    "story": "Hầu hết các nhà phân tích đầu tư dừng lại ở phân tích. Tôi xây dựng các hệ thống giúp phân tích trở nên khả thi - rồi quay lại và thực hiện phân tích."
   },
   "contact": {
     "label": "Liên hệ",

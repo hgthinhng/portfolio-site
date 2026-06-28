@@ -1,8 +1,8 @@
 {
   "hero": {
-    "headline": "Most analysts read the market. I built an engine that reads all of it — daily, across 130 Vietnamese stocks.",
+    "headline": "Most analysts read the market. I built an engine that reads all of it - daily, across 130 Vietnamese stocks.",
     "kicker": "Investment analyst · Systems builder · AI-solutions consultant · Finance educator",
-    "bridge": "Fundamental analysis → self-built research platform → enterprise AI → graduate teaching. I move across all four — fast.",
+    "bridge": "Fundamental analysis → self-built research platform → enterprise AI → graduate teaching. I move across all four - fast.",
     "cta1": "View research",
     "cta2": "Contact"
   },
@@ -11,7 +11,7 @@
     "title": "What I Do",
     "analyze": {
       "title": "Analyze",
-      "line": "Fundamental + macro research on Vietnamese equities — systematized, not ad hoc.",
+      "line": "Fundamental + macro research on Vietnamese equities - systematized, not ad hoc.",
       "metric": "130 tickers · daily pipeline",
       "cta": "See research"
     },
@@ -57,17 +57,17 @@
   "aiSolutions": {
     "label": "AI Solutions",
     "title": "Applied AI Work",
-    "intro": "From enterprise consulting to production platforms — AI applied to finance, education, and research workflows."
+    "intro": "From enterprise consulting to production platforms: AI applied to finance, education, and research workflows."
   },
   "teach": {
     "label": "Teaching",
     "title": "Finance Education",
-    "intro": "Bridging the gap between institutional finance knowledge and accessible learning — curriculum author, platform builder, and classroom instructor."
+    "intro": "Bridging the gap between institutional finance knowledge and accessible learning: curriculum author, platform builder, and classroom instructor."
   },
   "about": {
     "label": "About",
     "title": "Investor · Builder",
-    "story": "Most investment analysts stop at the analysis. I build the systems that make the analysis possible — then go back and do the analysis too."
+    "story": "Most investment analysts stop at the analysis. I build the systems that make the analysis possible - then go back and do the analysis too."
   },
   "contact": {
     "label": "Contact",
