@@ -42,3 +42,6 @@ next-env.d.ts
 
 # omc session telemetry
 .omc/state/
+
+# velite generated output
+.velite
