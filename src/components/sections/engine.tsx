@@ -4,6 +4,7 @@ import { Section } from './section';
 import { Reveal } from '@/components/motion/reveal';
 import { ENGINE_STATS } from '@/content/engine-stats';
 import { StatCard } from '@/components/viz/stat-card';
+import { ConvictionChart } from '@/components/viz/conviction-chart';
 
 const ARCH = [
   { key: 'L0', desc: 'Infrastructure (FastAPI, DB, cron)' },
@@ -35,14 +36,10 @@ export function EngineSection() {
         ))}
       </div>
 
-      {/* Chart placeholder */}
-      <Reveal delay={0.1}>
-        <div className="bg-surface border border-white/[0.06] rounded-sm h-48 flex items-center justify-center mb-12">
-          <p className="font-mono text-xs text-muted/40">
-            [ Conviction ranking chart — Phase 3 ]
-          </p>
-        </div>
-      </Reveal>
+      {/* Conviction ranking chart */}
+      <div className="mb-12">
+        <ConvictionChart />
+      </div>
 
       {/* Architecture row */}
       <Reveal delay={0.2}>
