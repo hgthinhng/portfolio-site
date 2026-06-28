@@ -13,11 +13,11 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <main>
       <HeroSection locale={locale} />
       <PillarsSection />
-      <ResearchSection />
+      <ResearchSection locale={locale} />
       <EngineSection />
-      <AiSolutionsSection />
-      <TeachSection />
-      <AboutSection />
+      <AiSolutionsSection locale={locale} />
+      <TeachSection locale={locale} />
+      <AboutSection locale={locale} />
       <ContactSection />
     </main>
   );

@@ -34,10 +34,35 @@
       "cta": "See teaching"
     }
   },
-  "research": { "title": "Research" },
-  "engine": { "title": "The Engine" },
-  "aiSolutions": { "title": "AI Solutions" },
-  "teach": { "title": "Teaching" },
-  "about": { "title": "About" },
-  "contact": { "title": "Contact" }
+  "research": {
+    "label": "Selected Research",
+    "title": "Writing & Analysis",
+    "intro": "Investment memos, macro theses, and quantitative research on Vietnamese markets."
+  },
+  "engine": {
+    "label": "The Engine",
+    "title": "Research Platform",
+    "intro": "A self-built research platform for Vietnamese equities. Daily cron pipeline, multi-source crawlers, factor signals, conviction ranking.",
+    "status": "Status: built & validating · paper portfolio · some lanes known-degraded"
+  },
+  "aiSolutions": {
+    "label": "AI Solutions",
+    "title": "Applied AI Work",
+    "intro": "From enterprise consulting to production platforms — AI applied to finance, education, and research workflows."
+  },
+  "teach": {
+    "label": "Teaching",
+    "title": "Finance Education",
+    "intro": "Bridging the gap between institutional finance knowledge and accessible learning — curriculum author, platform builder, and classroom instructor."
+  },
+  "about": {
+    "label": "About",
+    "title": "Investor · Builder",
+    "story": "Most investment analysts stop at the analysis. I build the systems that make the analysis possible — then go back and do the analysis too."
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Get in touch",
+    "tagline": "Open to buy-side analyst roles, quant research, and applied-AI consulting engagements."
+  }
 }

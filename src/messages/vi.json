@@ -34,10 +34,35 @@
       "cta": "Xem giảng dạy"
     }
   },
-  "research": { "title": "Nghiên cứu" },
-  "engine": { "title": "Hệ thống phân tích" },
-  "aiSolutions": { "title": "Giải pháp AI" },
-  "teach": { "title": "Giảng dạy" },
-  "about": { "title": "Về tôi" },
-  "contact": { "title": "Liên hệ" }
+  "research": {
+    "label": "Nghiên cứu chọn lọc",
+    "title": "Bài viết & Phân tích",
+    "intro": "Bản ghi đầu tư, luận điểm vĩ mô và nghiên cứu định lượng về thị trường Việt Nam."
+  },
+  "engine": {
+    "label": "Hệ thống phân tích",
+    "title": "Nền tảng nghiên cứu",
+    "intro": "Nền tảng nghiên cứu tự xây cho cổ phiếu Việt Nam. Pipeline cron hàng ngày, crawler đa nguồn, tín hiệu nhân tố, xếp hạng độ tin cậy.",
+    "status": "Trạng thái: đã xây & đang kiểm chứng · danh mục ảo · một số luồng đang lỗi đã biết"
+  },
+  "aiSolutions": {
+    "label": "Giải pháp AI",
+    "title": "Ứng dụng AI",
+    "intro": "Từ tư vấn doanh nghiệp đến nền tảng sản xuất — AI ứng dụng trong tài chính, giáo dục và quy trình nghiên cứu."
+  },
+  "teach": {
+    "label": "Giảng dạy",
+    "title": "Giáo dục tài chính",
+    "intro": "Thu hẹp khoảng cách giữa kiến thức tài chính tổ chức và học tập tiếp cận — tác giả giáo trình, người xây dựng nền tảng và giảng viên."
+  },
+  "about": {
+    "label": "Về tôi",
+    "title": "Nhà đầu tư · Kiến trúc sư",
+    "story": "Hầu hết các nhà phân tích đầu tư dừng lại ở phân tích. Tôi xây dựng các hệ thống giúp phân tích trở nên khả thi — rồi quay lại và thực hiện phân tích."
+  },
+  "contact": {
+    "label": "Liên hệ",
+    "title": "Liên lạc",
+    "tagline": "Sẵn sàng cho các vị trí phân tích phía mua, nghiên cứu định lượng và tư vấn AI ứng dụng."
+  }
 }
