@@ -13,8 +13,26 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Hung Thinh Nguyen",
-  description: "Investment analyst · Systems builder · AI-solutions consultant · Finance educator",
+  metadataBase: new URL('https://hgthinhng.vercel.app'),
+  title: {
+    default: 'Hung Thinh Nguyen',
+    template: '%s — Hung Thinh Nguyen',
+  },
+  description:
+    'Investment analyst · Systems builder · AI-solutions consultant · Finance educator',
+  openGraph: {
+    type: 'website',
+    siteName: 'Hung Thinh Nguyen',
+    title: 'Hung Thinh Nguyen',
+    description:
+      'Investment analyst · Systems builder · AI-solutions consultant · Finance educator',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hung Thinh Nguyen',
+    description:
+      'Investment analyst · Systems builder · AI-solutions consultant · Finance educator',
+  },
 };
 
 export default async function LocaleLayout({
