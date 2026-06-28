@@ -29,14 +29,9 @@ export function EngineSection() {
       {/* Number cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
         {ENGINE_STATS.map(({ value, label, suffix, sub }, i) => (
-          <StatCard
-            key={label}
-            value={value}
-            label={label}
-            suffix={suffix}
-            sub={sub}
-            delay={i * 0.15}
-          />
+          <Reveal key={label} delay={i * 0.08}>
+            <StatCard value={value} label={label} suffix={suffix} sub={sub} delay={i * 0.12} />
+          </Reveal>
         ))}
       </div>
 
@@ -55,7 +50,7 @@ export function EngineSection() {
           {ARCH.map(({ key, desc }) => (
             <div
               key={key}
-              className="bg-surface border-l-2 border-copper/40 pl-4 py-3 rounded-r-sm"
+              className="bg-surface/60 border border-white/[0.05] rounded-sm px-4 py-3"
             >
               <p className="font-mono text-xs text-copper mb-1">{key}</p>
               <p className="font-mono text-xs text-muted leading-relaxed">{desc}</p>

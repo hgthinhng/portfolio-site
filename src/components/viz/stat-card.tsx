@@ -1,5 +1,5 @@
 'use client';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useMemo } from 'react';
 import {
   motion,
   useInView,
@@ -23,9 +23,8 @@ export function StatCard({ value, label, suffix = '', sub, delay = 0 }: StatCard
   const count = useMotionValue(0);
   const shouldReduceMotion = useReducedMotion();
 
-  const displayValue = useTransform(count, (v) =>
-    Intl.NumberFormat('en-US').format(Math.round(v))
-  );
+  const formatter = useMemo(() => new Intl.NumberFormat('en-US'), []);
+  const displayValue = useTransform(count, (v) => formatter.format(Math.round(v)));
 
   useEffect(() => {
     if (!isInView) return;
@@ -38,7 +37,7 @@ export function StatCard({ value, label, suffix = '', sub, delay = 0 }: StatCard
       delay,
       ease: [0.25, 0.1, 0.25, 1],
     });
-    return controls.stop;
+    return () => controls.stop();
   }, [isInView, value, delay, shouldReduceMotion, count]);
 
   return (
