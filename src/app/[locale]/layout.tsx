@@ -48,9 +48,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${GeistSans.variable} ${GeistMono.variable} ${sourceSerif.variable}`}>
       <body className="font-sans bg-bg text-fg">
-        <SiteHeader />
         <LenisProvider>
           <NextIntlClientProvider messages={messages}>
+            <SiteHeader />
             {children}
           </NextIntlClientProvider>
         </LenisProvider>
