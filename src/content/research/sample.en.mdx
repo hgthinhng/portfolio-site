@@ -3,18 +3,31 @@ slug: sample
 locale: en
 title: "Sample Research Article"
 date: 2026-06-28
-summary: "A sample research article demonstrating the bilingual MDX content layer for the portfolio research section."
+summary: "A sample research article demonstrating the bilingual MDX content layer."
 tags: ["macro", "sample"]
 featured: false
 sources: []
 ---
 
-This is a sample English research article. Replace with real content in Phase 5.
+<ThesisBox label="Investment Thesis">
+This is a placeholder thesis. The sample demonstrates that MDX custom components render correctly.
+</ThesisBox>
 
 ## Analysis
 
 Placeholder analysis section.
 
-## Conclusion
+<PullQuote source="Sample source">
+A key insight or quote from the research.
+</PullQuote>
 
-Placeholder conclusion.
+<RiskNote>
+This is a risk disclosure placeholder. In real articles, specific risks are listed here.
+</RiskNote>
+
+<ChartEmbed chartKey="sample-chart" caption="Sample chart placeholder — Phase 3" />
+
+<SourceList sources={[
+  { label: "Sample Source 1", href: "https://example.com" },
+  { label: "Sample Source 2" }
+]} />
