@@ -2,13 +2,8 @@
 import { useTranslations } from 'next-intl';
 import { Section } from './section';
 import { Reveal } from '@/components/motion/reveal';
-
-const NUMBERS = [
-  { value: '130',   label: 'tickers tracked',  sub: '~85% of VN market cap' },
-  { value: '70+',   label: 'data sources',      sub: 'crawlers, APIs, RSS, broker PDFs' },
-  { value: '4',     label: 'languages',         sub: 'Vietnamese · English · Russian · French' },
-  { value: '1,863', label: 'trading days',      sub: 'daily data 2019–2026' },
-] as const;
+import { ENGINE_STATS } from '@/content/engine-stats';
+import { StatCard } from '@/components/viz/stat-card';
 
 const ARCH = [
   { key: 'L0', desc: 'Infrastructure (FastAPI, DB, cron)' },
@@ -33,14 +28,15 @@ export function EngineSection() {
 
       {/* Number cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
-        {NUMBERS.map(({ value, label, sub }, i) => (
-          <Reveal key={value} delay={i * 0.08}>
-            <div className="bg-surface border border-white/[0.06] rounded-sm p-5">
-              <p className="font-mono text-4xl text-copper leading-none">{value}</p>
-              <p className="text-sm text-fg mt-2">{label}</p>
-              <p className="text-xs text-muted mt-1 leading-relaxed">{sub}</p>
-            </div>
-          </Reveal>
+        {ENGINE_STATS.map(({ value, label, suffix, sub }, i) => (
+          <StatCard
+            key={label}
+            value={value}
+            label={label}
+            suffix={suffix}
+            sub={sub}
+            delay={i * 0.15}
+          />
         ))}
       </div>
 
