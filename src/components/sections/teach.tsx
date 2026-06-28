@@ -72,7 +72,7 @@ export async function TeachSection({ locale }: { locale: string }) {
           ))}
         </ul>
         <p className="mt-5 text-xs text-muted/50 italic">
-          Passed CFA Levels I–III — not charterholder
+          Passed CFA Levels I–III (not charterholder)
         </p>
       </Reveal>
     </Section>

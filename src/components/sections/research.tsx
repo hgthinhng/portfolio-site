@@ -38,7 +38,7 @@ export async function ResearchSection({ locale }: { locale: string }) {
         <Reveal delay={0.06}>
           <div className="bg-surface border border-white/[0.06] rounded-sm p-6 flex flex-col h-full hover:border-copper/20 transition-colors duration-200">
             <p className="font-mono text-xs text-copper/70 mb-3">VN Markets · Ongoing</p>
-            <h3 className="text-base font-semibold text-fg mb-2">StoiX Read — Featured Articles</h3>
+            <h3 className="text-base font-semibold text-fg mb-2">StoiX Read: Featured Articles</h3>
             <p className="text-sm text-muted leading-relaxed flex-1">
               9 long-form bilingual articles on VN equities: valuation, credit, macro, flows, banking.
             </p>

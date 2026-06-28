@@ -5,7 +5,7 @@ import { Reveal } from '@/components/motion/reveal';
 const ITEMS = [
   {
     title: 'AI News Engine',
-    sub: 'Multilingual LLM enrichment for VN market news — intake classification, relevance scoring, sector tagging, sentiment, morning brief (5 modes), catalyst classification. Part of HLPP pipeline.',
+    sub: 'Multilingual LLM enrichment for VN market news: intake classification, relevance scoring, sector tagging, sentiment, morning brief (5 modes), catalyst classification. Part of HLPP pipeline.',
     tag: 'Production · Part of HLPP',
     link: null as string | null,
   },
@@ -28,7 +28,7 @@ const ITEMS = [
     link: null as string | null,
   },
   {
-    title: 'IHK — Applied-AI Product Engineering',
+    title: 'IHK: Applied-AI Product Engineering',
     sub: 'Local-first semantic knowledge board: URL → AI metadata extraction + embeddings → constellation viz (UMAP) → Blend AI synthesis. Multi-provider routing on IndexedDB.',
     tag: 'Local prototype',
     link: null as string | null,

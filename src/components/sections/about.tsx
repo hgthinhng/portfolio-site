@@ -4,9 +4,9 @@ import { Reveal } from '@/components/motion/reveal';
 
 const CREDENTIALS = [
   'Passed CFA Levels I–III',
-  'MSc (or equiv) — [operator fills]',
-  'HLPP research platform — built & validating · paper portfolio (1B VND notional)',
-  'exam-ops — production platform · live · free-tier hosting',
+  'MSc (or equiv) - [operator fills]',
+  'HLPP research platform - built & validating · paper portfolio (1B VND notional)',
+  'exam-ops - production platform · live · free-tier hosting',
   'Teaching: financial econometrics, derivatives, CFA prep',
 ] as const;
 
@@ -27,7 +27,7 @@ export async function AboutSection({ locale }: { locale: string }) {
         <Reveal delay={0.1}>
           <div className="bg-surface border border-white/[0.06] rounded-sm aspect-[3/4] max-w-xs flex items-center justify-center mx-auto md:mx-0">
             <p className="font-mono text-xs text-muted/40 text-center px-6 leading-relaxed">
-              [ Headshot — operator adds in P5 ]
+              [ Headshot - add photo in Phase 5 ]
             </p>
           </div>
         </Reveal>
