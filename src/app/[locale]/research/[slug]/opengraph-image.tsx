@@ -3,6 +3,7 @@ import { research } from '@/.velite';
 import { notFound } from 'next/navigation';
 
 export const runtime = 'edge';
+export const alt = 'Research article — Hung Thinh Nguyen';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -54,6 +55,10 @@ export default async function Image({
             color: '#ede8e2',
             lineHeight: 1.2,
             marginBottom: 20,
+            overflow: 'hidden',
+            display: '-webkit-box',
+            WebkitLineClamp: 3,
+            WebkitBoxOrient: 'vertical',
           }}
         >
           {article.title}
