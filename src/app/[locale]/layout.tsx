@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { GeistSans, GeistMono, sourceSerif } from "@/app/fonts";
 import { SiteHeader } from "@/components/layout/site-header";
+import { LenisProvider } from "@/components/motion/lenis-provider";
 import "@/app/globals.css";
 
 export function generateStaticParams() {
@@ -30,9 +31,11 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${GeistSans.variable} ${GeistMono.variable} ${sourceSerif.variable}`}>
       <body className="font-sans bg-bg text-fg">
         <SiteHeader />
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <LenisProvider>
+          <NextIntlClientProvider messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </LenisProvider>
       </body>
     </html>
   );
