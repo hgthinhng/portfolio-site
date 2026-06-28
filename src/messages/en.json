@@ -1,5 +1,11 @@
 {
-  "hero": { "title": "Hung Thinh Nguyen" },
+  "hero": {
+    "headline": "Most analysts read the market. I built an engine that reads all of it — daily, across 130 Vietnamese stocks.",
+    "kicker": "Investment analyst · Systems builder · AI-solutions consultant · Finance educator",
+    "bridge": "Fundamental analysis → self-built research platform → enterprise AI → graduate teaching. I move across all four — fast.",
+    "cta1": "View research",
+    "cta2": "Contact"
+  },
   "pillars": { "title": "What I Do" },
   "research": { "title": "Research" },
   "engine": { "title": "The Engine" },

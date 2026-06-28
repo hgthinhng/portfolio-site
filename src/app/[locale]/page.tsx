@@ -7,10 +7,11 @@ import { TeachSection } from '@/components/sections/teach';
 import { AboutSection } from '@/components/sections/about';
 import { ContactSection } from '@/components/sections/contact';
 
-export default function Home() {
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   return (
     <main>
-      <HeroSection />
+      <HeroSection locale={locale} />
       <PillarsSection />
       <ResearchSection />
       <EngineSection />
