@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking. Companion: read `2026-06-28-portfolio-site-design.md` (the spec) before any task.
 
-**Goal:** Build & ship a bilingual (EN/VI), charcoal-copper, cinematic-yet-credible Next.js portfolio at `hungthinh.vercel.app` that positions HT for buy-side recruiters across 4 pillars (Analyze / Build / AI-Solutions / Teach).
+**Goal:** Build & ship a bilingual (EN/VI), charcoal-copper, cinematic-yet-credible Next.js portfolio at `hgthinhng.vercel.app` that positions HT for buy-side recruiters across 4 pillars (Analyze / Build / AI-Solutions / Teach).
 
 **Architecture:** Next.js 16 App Router (RSC) single-scroll landing (8 sections) + `/research` index + Velite-MDX case-study pages. Bilingual via next-intl `[locale]` routing with a hot-swap EN|VI toggle. Reuse proven patterns from the existing `stoix-read` repo (Velite + next-intl + Tailwind + motion). Charcoal+Copper design system. No 3D — wow from typography, scroll choreography, animated data-viz.
 
@@ -49,7 +49,7 @@
 
 # PHASE 0 — Scaffold & Deploy Skeleton
 
-**Phase gate:** `hungthinh.vercel.app` (or a Vercel preview URL) loads a live charcoal page with working EN|VI toggle; `pnpm build` green; `pnpm lint` clean.
+**Phase gate:** `hgthinhng.vercel.app` (or a Vercel preview URL) loads a live charcoal page with working EN|VI toggle; `pnpm build` green; `pnpm lint` clean.
 
 ### Task 0.1: Create Next.js repo in WSL
 
@@ -244,7 +244,7 @@ git add -A && git commit -m "feat: sticky hot-swap EN|VI locale toggle + header"
 **Files:**
 - Create: `vercel.json` (if needed), confirm Vercel project.
 
-- [ ] **Step 1: Push branch + import to Vercel** — operator action: create Vercel project from the repo (or `vercel` CLI), set project name so the URL is `hungthinh.vercel.app` (rename in Vercel dashboard → Settings → Domains). No env vars needed yet.
+- [ ] **Step 1: Push branch + import to Vercel** — operator action: create Vercel project from the repo (or `vercel` CLI), set project name so the URL is `hgthinhng.vercel.app` (rename in Vercel dashboard → Settings → Domains). No env vars needed yet.
 
 - [ ] **Step 2: Verify live**
 
@@ -469,7 +469,7 @@ git add -A && git commit -m "chore: vercel deploy config"
 
 # PHASE 5 — Real content fill & ship
 
-**Phase gate:** all copy final (EN+VI), 3-4 research featured, live demos linked/embedded, CV + headshot in, deployed to hungthinh.vercel.app, operator sign-off.
+**Phase gate:** all copy final (EN+VI), 3-4 research featured, live demos linked/embedded, CV + headshot in, deployed to hgthinhng.vercel.app, operator sign-off.
 
 ### Task 5.1: Finalize all section copy (EN + VI)
 
@@ -494,7 +494,7 @@ git add -A && git commit -m "chore: vercel deploy config"
 ### Task 5.4: Final QA + ship
 
 - [ ] **Step 1:** Full bilingual click-through; Playwright smoke of all routes; final Lighthouse; broken-link check; honesty-gate final review.
-- [ ] **Step 2:** Confirm Vercel domain = hungthinh.vercel.app; production deploy green (`gh api .../commits/<sha>/status`).
+- [ ] **Step 2:** Confirm Vercel domain = hgthinhng.vercel.app; production deploy green (`gh api .../commits/<sha>/status`).
 - [ ] **Step 3:** Operator sign-off → (operator pushes/promotes to production — do not auto-promote).
 - [ ] **Step 4: Commit + tag** `chore: v1 ship`.
 

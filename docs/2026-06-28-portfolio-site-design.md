@@ -1,4 +1,4 @@
-# Design Spec — Portfolio Website "hungthinh.vercel.app"
+# Design Spec — Portfolio Website "hgthinhng.vercel.app"
 
 **Owner:** Nguyen Hung Thinh (HT) — investment analyst / quant-fintech builder
 **Date:** 2026-06-28
@@ -122,7 +122,7 @@ Recharts (shadcn charts) + TanStack Table        ← research-engine viz / ranki
 Velite (type-safe MDX, bilingual)                ← research case-studies
 next-intl (en/vi, auto-detect, hot-swap toggle)
 Geist Sans/Mono + Source Serif 4 · lucide-react · next/image + @vercel/og
-Deploy: Vercel free → hungthinh.vercel.app
+Deploy: Vercel free → hgthinhng.vercel.app
 ```
 
 **Reuse:** `stoix-read` already runs Next.js 16 + Velite + next-intl + Tailwind + a 3-theme design system + scroll-reveal motion. Lift its patterns (Velite config, next-intl routing, MDX components, motion utilities, OG/SEO setup) rather than building from scratch. Do NOT copy its "Ink & Paper" visual identity — portfolio uses Charcoal + Copper.
@@ -156,7 +156,7 @@ Deploy: Vercel free → hungthinh.vercel.app
 
 ## 11. Build phases (overview — detail in PLAN doc)
 
-- **P0** Scaffold + deploy skeleton to Vercel (confirm hungthinh.vercel.app live) + charcoal-copper tokens + fonts + Lenis + next-intl baseline.
+- **P0** Scaffold + deploy skeleton to Vercel (confirm hgthinhng.vercel.app live) + charcoal-copper tokens + fonts + Lenis + next-intl baseline.
 - **P1** Design system + 8 landing sections (static, placeholder copy) + i18n toggle.
 - **P2** Velite + bilingual content layer + `/research` index + case-study template + migrate Ngư Ông Đắc Lợi.
 - **P3** The Engine viz (Recharts + animated number cards + architecture mini-diagram) + TanStack ranking table.
@@ -168,7 +168,7 @@ Deploy: Vercel free → hungthinh.vercel.app
 ## 12. Open decisions for operator (confirm during/after P0)
 
 1. Hero copy C final wording (EN + VI) — draft from this spec, operator approves.
-2. Custom domain later? (v1 = hungthinh.vercel.app free.)
+2. Custom domain later? (v1 = hgthinhng.vercel.app free.)
 3. Which 3-4 research pieces to feature (Ngư Ông + which StoiX Read articles).
 4. Professional headshot + final CV PDF to include.
 5. microfin / IHK: screen-capture vs Vercel preview-deploy for the demo (P5).
