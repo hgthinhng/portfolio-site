@@ -8,7 +8,7 @@ export async function HeroSection({ locale }: { locale: string }) {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center overflow-hidden scroll-mt-16"
+      className="relative min-h-[100dvh] flex items-center overflow-hidden scroll-mt-16"
     >
       {/* Copper radial glow — top-right quadrant, very subtle */}
       <div

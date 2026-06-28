@@ -14,6 +14,7 @@ const CHART_DATA = [...SAMPLE_RANKING];
 export function ConvictionChart() {
   return (
     <Reveal>
+      <div role="img" aria-label="Bar chart showing illustrative conviction scores for sample VN equities">
       <ChartContainer config={chartConfig} className="h-64 w-full [aspect-ratio:unset]">
         <BarChart
           data={CHART_DATA}
@@ -38,6 +39,7 @@ export function ConvictionChart() {
       <p className="font-mono text-xs text-muted/60 text-center mt-2">
         Illustrative sample — not live signals
       </p>
+      </div>
     </Reveal>
   );
 }

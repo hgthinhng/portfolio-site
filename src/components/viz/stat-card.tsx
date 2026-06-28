@@ -41,12 +41,16 @@ export function StatCard({ value, label, suffix = '', sub, delay = 0 }: StatCard
   }, [isInView, value, delay, shouldReduceMotion, count]);
 
   return (
-    <div ref={ref} className="bg-surface border border-white/[0.06] rounded-sm p-5">
-      <p className="font-mono text-4xl text-copper leading-none">
+    <div
+      ref={ref}
+      aria-label={`${label}: ${value}${suffix}`}
+      className="bg-surface border border-white/[0.06] rounded-sm p-5"
+    >
+      <p className="font-mono text-4xl text-copper leading-none" aria-hidden>
         <motion.span>{displayValue}</motion.span>
         {suffix}
       </p>
-      <p className="text-sm text-fg mt-2">{label}</p>
+      <p className="text-sm text-fg mt-2" aria-hidden>{label}</p>
       {sub && <p className="text-xs text-muted mt-1 leading-relaxed">{sub}</p>}
     </div>
   );

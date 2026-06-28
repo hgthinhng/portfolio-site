@@ -55,7 +55,8 @@ export function PillarsSection() {
                 </p>
                 <a
                   href={anchor}
-                  className="mt-4 text-xs text-muted hover:text-copper transition-colors duration-150"
+                  aria-label={`${t(`${key}.cta`)} — ${t(`${key}.title`)}`}
+                  className="mt-4 text-xs text-muted hover:text-copper transition-colors duration-150 focus-visible:rounded-sm"
                 >
                   {t(`${key}.cta`)} →
                 </a>
