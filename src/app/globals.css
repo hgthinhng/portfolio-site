@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@theme {
+  --color-bg: #161413;
+  --color-surface: #1f1c1a;
+  --color-copper: #b87333;
+  --color-copper-soft: #c98a4e;
+  --color-fg: #ede8e2;
+  --color-muted: #9a938b;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-source-serif);
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-fg);
+}
+
+::selection {
+  background: var(--color-copper);
+  color: var(--color-bg);
+}
