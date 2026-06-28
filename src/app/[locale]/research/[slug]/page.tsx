@@ -5,6 +5,7 @@ import { Link } from '@/i18n/navigation';
 import { MDXContent } from '@/components/mdx/mdx-content';
 import { research } from '@/.velite';
 import { routing } from '@/i18n/routing';
+import { formatDate } from '@/lib/format-date';
 
 export async function generateStaticParams() {
   // Only generate internal pages for articles without an external link
@@ -18,7 +19,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
-  const article = research.find((r) => r.id === `${locale}__${slug}`);
+  const article = research.find((r) => r.slug === slug && r.locale === locale);
   if (!article) return {};
 
   const alternates: Record<string, string> = {};
@@ -26,6 +27,7 @@ export async function generateMetadata({
     const alt = research.find((r) => r.slug === slug && r.locale === loc && !r.external);
     if (alt) alternates[loc] = `/${loc}/research/${slug}`;
   });
+  alternates['x-default'] = `/en/research/${slug}`;
 
   return {
     title: `${article.title} — Hung Thinh Nguyen`,
@@ -42,13 +44,7 @@ export async function generateMetadata({
   };
 }
 
-function formatDate(iso: string, locale: string): string {
-  return new Date(iso).toLocaleDateString(locale === 'vi' ? 'vi-VN' : 'en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
-}
+type TocItem = { title: string; url: string };
 
 export default async function ResearchArticlePage({
   params,
@@ -58,7 +54,7 @@ export default async function ResearchArticlePage({
   const { locale, slug } = await params;
   const t = await getTranslations({ locale, namespace: 'research' });
 
-  const article = research.find((r) => r.id === `${locale}__${slug}`);
+  const article = research.find((r) => r.slug === slug && r.locale === locale);
   if (!article) notFound();
 
   // If this article has an external URL, redirect rather than render a blank shell
@@ -112,10 +108,10 @@ export default async function ResearchArticlePage({
           {hasToc && (
             <aside className="hidden xl:block w-48 shrink-0 sticky top-20 self-start">
               <p className="font-mono text-[10px] tracking-[0.15em] text-copper/60 uppercase mb-3">
-                Contents
+                {t('toc')}
               </p>
               <nav className="flex flex-col gap-1">
-                {(article.toc as unknown as { title: string; url: string }[]).map((item) => (
+                {(article.toc as TocItem[]).map((item) => (
                   <a
                     key={item.url}
                     href={item.url}

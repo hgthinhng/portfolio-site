@@ -4,6 +4,7 @@ import { Link } from '@/i18n/navigation';
 import { Section } from '@/components/sections/section';
 import { Reveal } from '@/components/motion/reveal';
 import { research } from '@/.velite';
+import { formatDate } from '@/lib/format-date';
 
 export async function generateMetadata({
   params,
@@ -16,14 +17,6 @@ export async function generateMetadata({
     title: `${t('title')} — Hung Thinh Nguyen`,
     description: t('intro'),
   };
-}
-
-function formatDate(iso: string, locale: string): string {
-  return new Date(iso).toLocaleDateString(locale === 'vi' ? 'vi-VN' : 'en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  });
 }
 
 export default async function ResearchIndexPage({
@@ -56,9 +49,7 @@ export default async function ResearchIndexPage({
       <Reveal delay={0.05}>
         <div className="mb-10 border border-copper/20 bg-surface rounded-sm p-5 flex flex-col sm:flex-row sm:items-center gap-3">
           <span className="text-sm text-muted flex-1">
-            {locale === 'vi'
-              ? 'Toàn bộ ấn phẩm phân tích dài hơi của tôi có trên StoiX Read.'
-              : 'My full long-form publication lives on StoiX Read.'}
+            {t('bannerText')}
           </span>
           <a
             href="https://stoix-read.vercel.app"
@@ -121,7 +112,7 @@ export default async function ResearchIndexPage({
 
                 {/* CTA row */}
                 <p className="mt-5 text-xs text-copper group-hover:text-copper/70 transition-colors duration-150">
-                  {isExternal ? '↗ Read article' : 'Read case study →'}
+                  {isExternal ? t('readArticleExternal') : t('readCaseStudy')}
                 </p>
               </div>
             );

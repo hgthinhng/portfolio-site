@@ -42,7 +42,11 @@
     "published": "Published",
     "back": "← Back to Research",
     "noArticles": "No articles yet.",
-    "external": "↗ External publication"
+    "external": "↗ External publication",
+    "readCaseStudy": "Read case study →",
+    "readArticleExternal": "↗ Read article",
+    "toc": "Contents",
+    "bannerText": "Dive deeper into my VN equity research, backtests, and AI-driven market analytics."
   },
   "engine": {
     "label": "The Engine",

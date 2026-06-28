@@ -42,7 +42,11 @@
     "published": "Xuất bản",
     "back": "← Về trang Research",
     "noArticles": "Chưa có bài viết.",
-    "external": "↗ Bài viết ngoài"
+    "external": "↗ Bài viết ngoài",
+    "readCaseStudy": "Đọc nghiên cứu →",
+    "readArticleExternal": "↗ Đọc bài viết",
+    "toc": "Mục lục",
+    "bannerText": "Khám phá sâu hơn về nghiên cứu cổ phiếu VN, backtest và phân tích thị trường AI của tôi."
   },
   "engine": {
     "label": "Hệ thống phân tích",
