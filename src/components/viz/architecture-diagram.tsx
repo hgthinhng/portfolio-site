@@ -1,5 +1,7 @@
 import { Reveal } from '@/components/motion/reveal';
 
+// Layer names and descriptions intentionally in English in both locales — these are
+// technical tier identifiers (L0–L3, FastAPI, PostgreSQL) that are locale-invariant.
 const LAYERS = [
   {
     key: 'L0',
@@ -44,7 +46,7 @@ export function ArchitectureDiagram() {
     <Reveal delay={0.15}>
       <div className="w-full">
         {/* Desktop: horizontal row */}
-        <div className="hidden md:flex items-center gap-0">
+        <div className="hidden md:flex items-center gap-px">
           {LAYERS.flatMap((layer, i) => {
             const card = <LayerCard key={layer.key} layer={layer} />;
             if (i < LAYERS.length - 1) {
@@ -64,7 +66,7 @@ export function ArchitectureDiagram() {
         </div>
 
         {/* Mobile: vertical stack */}
-        <div className="flex md:hidden flex-col items-stretch gap-0">
+        <div className="flex md:hidden flex-col items-stretch gap-px">
           {LAYERS.flatMap((layer, i) => {
             const card = <LayerCard key={`m-${layer.key}`} layer={layer} />;
             if (i < LAYERS.length - 1) {
