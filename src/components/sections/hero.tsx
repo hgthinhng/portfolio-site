@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { Reveal } from '@/components/motion/reveal';
-import { Link } from '@/i18n/navigation';
+import { HeroCtaGroup } from './hero-cta-group';
 
 export async function HeroSection({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: 'hero' });
@@ -54,44 +54,9 @@ export async function HeroSection({ locale }: { locale: string }) {
         </Reveal>
 
         {/* CTAs */}
-        <Reveal delay={0.26}>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 items-center md:items-start">
-            <Link
-              href="/research"
-              className="inline-flex items-center justify-center bg-copper text-bg px-7 py-3.5 rounded-sm font-semibold text-sm hover:bg-copper-soft transition-colors duration-200 w-full sm:w-auto"
-            >
-              {t('cta1')}
-            </Link>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center border border-white/20 text-fg px-7 py-3.5 rounded-sm text-sm hover:border-copper/50 transition-colors duration-200 w-full sm:w-auto"
-            >
-              {t('cta2')}
-            </a>
-          </div>
+        <Reveal delay={0.28}>
+          <HeroCtaGroup cta1={t('cta1')} cta2={t('cta2')} />
         </Reveal>
-      </div>
-
-      {/* Scroll cue — opacity pulse, no bounce */}
-      <div
-        aria-hidden
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-pulse text-copper opacity-50"
-      >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          aria-hidden
-        >
-          <path
-            d="M5 7l5 5 5-5"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
       </div>
     </section>
   );

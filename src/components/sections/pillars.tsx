@@ -1,5 +1,5 @@
 'use client';
-import { motion } from 'motion/react';
+import { motion, useReducedMotion } from 'motion/react';
 import { TrendingUp, Layers, BrainCircuit, GraduationCap } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Section } from './section';
@@ -16,6 +16,7 @@ const PILLARS = [
 
 export function PillarsSection() {
   const t = useTranslations('pillars');
+  const reduced = useReducedMotion();
   return (
     <Section id="analyze" className="bg-bg">
       <Reveal>
@@ -32,8 +33,14 @@ export function PillarsSection() {
           return (
             <Reveal key={key} delay={i * 0.08}>
               <motion.div
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.2, ease: 'easeOut' }}
+                initial={{ boxShadow: '0 0 0 0 rgba(184,115,51,0)' }}
+                {...(!reduced && {
+                  whileHover: {
+                    y: -4,
+                    boxShadow: '0 8px 32px -8px rgba(184,115,51,0.2)',
+                  },
+                })}
+                transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
                 className="group bg-surface border border-white/[0.06] hover:border-copper/30 rounded-sm p-6 flex flex-col transition-colors duration-200 h-full"
               >
                 <Icon size={24} className="text-copper" />

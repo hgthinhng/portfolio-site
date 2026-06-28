@@ -18,12 +18,12 @@ export async function ResearchSection({ locale }: { locale: string }) {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
         {/* Card 1 — Ngư Ông Đắc Lợi */}
-        <Reveal delay={0.1}>
+        <Reveal delay={0}>
           <div className="bg-surface border border-white/[0.06] rounded-sm p-6 flex flex-col h-full hover:border-copper/20 transition-colors duration-200">
             <p className="font-mono text-xs text-copper/70 mb-3">Macro · 2025</p>
             <h3 className="text-base font-semibold text-fg mb-2">Ngư Ông Đắc Lợi</h3>
             <p className="text-sm text-muted leading-relaxed flex-1">
-              Russia as third-party beneficiary of US-Israel-Iran war — oil flows, fiscal impact.
+              Russia as third-party beneficiary of US-Israel-Iran war: oil flows and fiscal impact.
             </p>
             <Link
               href="/research/ngu-ong-dac-loi"
@@ -35,7 +35,7 @@ export async function ResearchSection({ locale }: { locale: string }) {
         </Reveal>
 
         {/* Card 2 — StoiX Read */}
-        <Reveal delay={0.2}>
+        <Reveal delay={0.06}>
           <div className="bg-surface border border-white/[0.06] rounded-sm p-6 flex flex-col h-full hover:border-copper/20 transition-colors duration-200">
             <p className="font-mono text-xs text-copper/70 mb-3">VN Markets · Ongoing</p>
             <h3 className="text-base font-semibold text-fg mb-2">StoiX Read — Featured Articles</h3>
@@ -54,13 +54,13 @@ export async function ResearchSection({ locale }: { locale: string }) {
         </Reveal>
 
         {/* Card 3 — DEPP Research Arc */}
-        <Reveal delay={0.3}>
+        <Reveal delay={0.12}>
           <div className="bg-surface border border-white/[0.06] rounded-sm p-6 flex flex-col h-full">
             <p className="font-mono text-xs text-copper/70 mb-3">Quant · 2026</p>
             <h3 className="text-base font-semibold text-fg mb-2">DEPP Research Arc</h3>
             <p className="text-sm text-muted leading-relaxed flex-1">
               1,805-day neutralized backtest of VN microstructure factors. Real information signal,
-              not net-positive long-only alpha at realistic cost — reframed as risk/state signal.
+              not net-positive long-only alpha at realistic cost; reframed as risk/state signal.
             </p>
             <span className="mt-5 text-xs text-muted/40 font-mono">Coming soon</span>
           </div>
