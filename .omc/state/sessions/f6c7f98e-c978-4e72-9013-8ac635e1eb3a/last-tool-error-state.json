@@ -1,7 +1,7 @@
 {
   "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"rtk ls /home/hgthinhng/stoix-read/i18n/ && echo \\\"---\\\" && rtk read /home/hgthinhng/stoix-read/i18n/routing.ts 2>/dev/null && echo \\\"---\\\" && rtk read /home/hgthinhng/stoix-read/middleware...",
-  "error": "Exit code 1\nrequest.ts  414B\nrouting.ts  647B\n---\nimport { defineRouting } from 'next-intl/routing';\n// localeDetection:false — the default-locale path '/' must ALWAYS serve vi. With detection\n// on, next-intl redirects '/' to the Accept-Language / NEXT_LOCALE-cookie locale, so an\n// English-browser visitor (or anyone who once viewed /en) is bounced from '/' back to\n// '/en' — which made the VI⇄EN switch look broken (\"clicking VI just reloads to EN\").\n// The switch is explicit here, so detection...",
-  "timestamp": "2026-06-28T13:47:21.551Z",
+  "tool_input_preview": "{\"command\":\"rtk npx vercel alias set portfolio-site-three-gray-12.vercel.app hungthinh.vercel.app --scope hgthinhngs-projects 2>&1\",\"timeout\":30000,\"description\":\"Set hungthinh.vercel.app alias on the...",
+  "error": "Exit code 1\n<claude-code-hint v=\"1\" type=\"plugin\" value=\"vercel@claude-plugins-official\" />\nVercel CLI 54.18.1 (Node.js 24.14.1)\n> Assigning alias hungthinh.vercel.app to portfolio-site-three-gray-12.vercel.app\nCreating alias\nError: The chosen alias \"hungthinh.vercel.app\" is already in use.",
+  "timestamp": "2026-06-28T14:18:10.209Z",
   "retry_count": 1
 }

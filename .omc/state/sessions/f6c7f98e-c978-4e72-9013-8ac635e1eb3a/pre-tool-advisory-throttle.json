@@ -1,25 +1,45 @@
 {
   "version": 1,
   "entries": {
+    "445ed27a3872b681d98190bae61ccb84954e1bc4e140df5370be958dee776b3a": {
+      "last_emitted_at_ms": 1782656361317,
+      "message": "Verify changes work after editing. Test functionality before marking complete."
+    },
+    "466399dafa2d20f60587180bad0a07358eb7f2bce724df0ff682f038ad33f5ad": {
+      "last_emitted_at_ms": 1782656355007,
+      "message": "Read multiple files in parallel when possible for faster analysis."
+    },
     "79a93d4a2f8f50b95f852280616242fee1855dc99a3c75211917f55e72e95fae": {
-      "last_emitted_at_ms": 1782654603896,
+      "last_emitted_at_ms": 1782656157478,
       "message": "Use parallel execution for independent tasks. Use run_in_background for long operations (npm install, builds, tests)."
+    },
+    "ffea61898e68f4bc98f4a59e3c51117e96f637fcca92dc7506b29b6e3c9abf84": {
+      "last_emitted_at_ms": 1782655237520,
+      "message": "Spawning agent: unknown (haiku) | Task: Task 0.5 reviewer: verify locale toggle + header spec compliance"
+    },
+    "b6722527db45b1f6d2a84f110f38da79f1a1019557037d3a5e22d85ebd1c6e8f": {
+      "last_emitted_at_ms": 1782655057704,
+      "message": "Spawning agent: unknown (sonnet) | Task: Task 0.5: EN|VI locale toggle + sticky header"
+    },
+    "40f7f420c418d3728f95fdb4179c7e698511718ea7762355d81aacfc6fd30cbb": {
+      "last_emitted_at_ms": 1782654904365,
+      "message": "Spawning agent: unknown (haiku) | Task: Task 0.4 re-review after middleware fix"
+    },
+    "0de915a8a37777befa1064a435c1daa9b6be4d4ae471dab451f1af640a729b3b": {
+      "last_emitted_at_ms": 1782654838229,
+      "message": "Spawning agent: unknown (sonnet) | Task: Task 0.4 fix: rename middleware→proxy + gitignore .omc/state"
+    },
+    "dacc60792296926a1c3a360c927cf3cfa887345564af3f7578ffb08d4031687c": {
+      "last_emitted_at_ms": 1782654722008,
+      "message": "Spawning agent: unknown (sonnet) | Task: Task 0.4 reviewer: verify next-intl routing spec compliance"
     },
     "96c5dfc242a31e636c9b56e8fd856cc0a47c395f2a0f711933d8a688c7e9e0f0": {
       "last_emitted_at_ms": 1782654543463,
       "message": "Spawning agent: unknown (sonnet) | Task: Task 0.4: next-intl en/vi routing + middleware + messages"
     },
-    "466399dafa2d20f60587180bad0a07358eb7f2bce724df0ff682f038ad33f5ad": {
-      "last_emitted_at_ms": 1782654408503,
-      "message": "Read multiple files in parallel when possible for faster analysis."
-    },
     "7b1fd86f91176593c2d1d8f1859551411912a6516a77debdaf54a20c708e1845": {
       "last_emitted_at_ms": 1782654404928,
       "message": "Spawning agent: unknown (haiku) | Task: Task 0.3 reviewer: verify design tokens + fonts spec compliance"
-    },
-    "445ed27a3872b681d98190bae61ccb84954e1bc4e140df5370be958dee776b3a": {
-      "last_emitted_at_ms": 1782654357254,
-      "message": "Verify changes work after editing. Test functionality before marking complete."
     },
     "595fae326a7eaea0999b941d461bf554c900e9aebe57752b4f39011da5f61866": {
       "last_emitted_at_ms": 1782654282664,
@@ -38,5 +58,5 @@
       "message": "Spawning agent: unknown (haiku) | Task: Task 0.1 reviewer: verify scaffold spec compliance"
     }
   },
-  "updated_at": "2026-06-28T13:50:03.896Z"
+  "updated_at": "2026-06-28T14:19:21.317Z"
 }
