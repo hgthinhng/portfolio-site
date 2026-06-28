@@ -23,7 +23,7 @@ const ITEMS = [
   },
   {
     title: 'Enterprise AI-Quoting (Anonymous)',
-    sub: 'Anonymized enterprise AI-quoting consulting (POC stage). AI-assisted FF&E quoting for a hospitality enterprise. Pre-revenue, POC proven.',
+    sub: 'Anonymized enterprise AI-quoting consulting (POC stage).',
     tag: 'Confidential · POC stage',
     link: null as string | null,
   },
