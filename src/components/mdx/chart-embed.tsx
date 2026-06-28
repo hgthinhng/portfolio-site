@@ -5,6 +5,7 @@ import { ConvictionChart } from '@/components/viz/conviction-chart';
 interface ChartEmbedProps {
   chartKey?: string;
   caption?: string;
+  /** Only used for the unknown-key fallback placeholder; registered charts control their own height. */
   height?: number;
 }
 

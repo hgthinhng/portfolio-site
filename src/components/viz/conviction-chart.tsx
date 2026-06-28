@@ -9,25 +9,27 @@ const chartConfig = {
   score: { label: 'Conviction score', color: '#b87333' },
 } satisfies ChartConfig;
 
+const CHART_DATA = [...SAMPLE_RANKING];
+
 export function ConvictionChart() {
   return (
     <Reveal>
-      <ChartContainer config={chartConfig} className="h-64 w-full">
+      <ChartContainer config={chartConfig} className="h-64 w-full [aspect-ratio:unset]">
         <BarChart
-          data={[...SAMPLE_RANKING]}
+          data={CHART_DATA}
           layout="vertical"
           margin={{ left: 8, right: 24, top: 4, bottom: 4 }}
         >
           <XAxis
             type="number"
             domain={[0, 100]}
-            tick={{ fill: '#9a938b', fontSize: 11, fontFamily: 'monospace' }}
+            tick={{ fill: 'var(--color-muted)', fontSize: 11, fontFamily: 'monospace' }}
           />
           <YAxis
             type="category"
             dataKey="ticker"
             width={36}
-            tick={{ fill: '#ede8e2', fontSize: 11, fontFamily: 'monospace' }}
+            tick={{ fill: 'var(--color-fg)', fontSize: 11, fontFamily: 'monospace' }}
           />
           <ChartTooltip content={<ChartTooltipContent />} />
           <Bar dataKey="score" fill="var(--color-score)" radius={[0, 2, 2, 0]} />

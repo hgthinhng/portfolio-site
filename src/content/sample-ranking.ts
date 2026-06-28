@@ -1,6 +1,6 @@
 // Illustrative sample data — not live signals
 export const SAMPLE_RANKING = [
-  { ticker: 'VCB', score: 82, sector: 'Banks' },
+  { ticker: 'VCB', score: 82, sector: 'Banks' }, // sector reserved for future colour-grouping
   { ticker: 'FPT', score: 78, sector: 'Tech' },
   { ticker: 'MWG', score: 71, sector: 'Retail' },
   { ticker: 'HPG', score: 68, sector: 'Steel' },
