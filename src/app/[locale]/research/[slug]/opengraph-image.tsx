@@ -2,7 +2,6 @@ import { ImageResponse } from 'next/og';
 import { research } from '@/.velite';
 import { notFound } from 'next/navigation';
 
-export const runtime = 'edge';
 export const alt = 'Research article — Hung Thinh Nguyen';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
