@@ -1,1 +1,10 @@
-{ "hero": { "title": "Hung Thinh Nguyen" } }
+{
+  "hero": { "title": "Hung Thinh Nguyen" },
+  "pillars": { "title": "What I Do" },
+  "research": { "title": "Research" },
+  "engine": { "title": "The Engine" },
+  "aiSolutions": { "title": "AI Solutions" },
+  "teach": { "title": "Teaching" },
+  "about": { "title": "About" },
+  "contact": { "title": "Contact" }
+}

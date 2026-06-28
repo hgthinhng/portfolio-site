@@ -1,10 +1,23 @@
-import { useTranslations } from "next-intl";
+import { HeroSection } from '@/components/sections/hero';
+import { PillarsSection } from '@/components/sections/pillars';
+import { ResearchSection } from '@/components/sections/research';
+import { EngineSection } from '@/components/sections/engine';
+import { AiSolutionsSection } from '@/components/sections/ai-solutions';
+import { TeachSection } from '@/components/sections/teach';
+import { AboutSection } from '@/components/sections/about';
+import { ContactSection } from '@/components/sections/contact';
 
 export default function Home() {
-  const t = useTranslations("hero");
   return (
-    <main className="min-h-dvh grid place-items-center">
-      <h1>{t("title")}</h1>
+    <main>
+      <HeroSection />
+      <PillarsSection />
+      <ResearchSection />
+      <EngineSection />
+      <AiSolutionsSection />
+      <TeachSection />
+      <AboutSection />
+      <ContactSection />
     </main>
   );
 }

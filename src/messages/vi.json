@@ -1,1 +1,10 @@
-{ "hero": { "title": "Nguyễn Hùng Thịnh" } }
+{
+  "hero": { "title": "Nguyễn Hùng Thịnh" },
+  "pillars": { "title": "Năng lực" },
+  "research": { "title": "Nghiên cứu" },
+  "engine": { "title": "Hệ thống phân tích" },
+  "aiSolutions": { "title": "Giải pháp AI" },
+  "teach": { "title": "Giảng dạy" },
+  "about": { "title": "Về tôi" },
+  "contact": { "title": "Liên hệ" }
+}
