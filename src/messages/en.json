@@ -37,7 +37,12 @@
   "research": {
     "label": "Selected Research",
     "title": "Writing & Analysis",
-    "intro": "Investment memos, macro theses, and quantitative research on Vietnamese markets."
+    "intro": "Investment memos, macro theses, and quantitative research on Vietnamese markets.",
+    "readFull": "Read my full publication →",
+    "published": "Published",
+    "back": "← Back to Research",
+    "noArticles": "No articles yet.",
+    "external": "↗ External publication"
   },
   "engine": {
     "label": "The Engine",

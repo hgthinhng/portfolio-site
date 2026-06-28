@@ -37,7 +37,12 @@
   "research": {
     "label": "Nghiên cứu chọn lọc",
     "title": "Bài viết & Phân tích",
-    "intro": "Bản ghi đầu tư, luận điểm vĩ mô và nghiên cứu định lượng về thị trường Việt Nam."
+    "intro": "Bản ghi đầu tư, luận điểm vĩ mô và nghiên cứu định lượng về thị trường Việt Nam.",
+    "readFull": "Đọc toàn bộ ấn phẩm →",
+    "published": "Xuất bản",
+    "back": "← Về trang Research",
+    "noArticles": "Chưa có bài viết.",
+    "external": "↗ Bài viết ngoài"
   },
   "engine": {
     "label": "Hệ thống phân tích",
