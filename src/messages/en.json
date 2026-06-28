@@ -6,7 +6,34 @@
     "cta1": "View research",
     "cta2": "Contact"
   },
-  "pillars": { "title": "What I Do" },
+  "pillars": {
+    "label": "Four pillars",
+    "title": "What I Do",
+    "analyze": {
+      "title": "Analyze",
+      "line": "Fundamental + macro research on Vietnamese equities — systematized, not ad hoc.",
+      "metric": "130 tickers · daily pipeline",
+      "cta": "See research"
+    },
+    "build": {
+      "title": "Build",
+      "line": "End-to-end research platform: crawlers → signals → conviction rank → Telegram bot.",
+      "metric": "1,863 trading days of data",
+      "cta": "See the engine"
+    },
+    "ai": {
+      "title": "AI Solutions",
+      "line": "Applied-AI consulting and products: RAG tutor, news engine, enterprise quoting.",
+      "metric": "5 shipped projects",
+      "cta": "See AI work"
+    },
+    "teach": {
+      "title": "Teach",
+      "line": "Finance educator: CFA curriculum author, exam-ops platform, graduate seminars.",
+      "metric": "7+ exam tracks · platform live",
+      "cta": "See teaching"
+    }
+  },
   "research": { "title": "Research" },
   "engine": { "title": "The Engine" },
   "aiSolutions": { "title": "AI Solutions" },

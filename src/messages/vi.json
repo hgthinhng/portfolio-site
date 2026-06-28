@@ -6,7 +6,34 @@
     "cta1": "Xem nghiên cứu",
     "cta2": "Liên hệ"
   },
-  "pillars": { "title": "Năng lực" },
+  "pillars": {
+    "label": "Bốn trụ cột",
+    "title": "Năng lực",
+    "analyze": {
+      "title": "Phân tích",
+      "line": "Nghiên cứu cơ bản + vĩ mô trên cổ phiếu Việt Nam — hệ thống hóa, không ad hoc.",
+      "metric": "130 mã · pipeline hàng ngày",
+      "cta": "Xem nghiên cứu"
+    },
+    "build": {
+      "title": "Xây dựng",
+      "line": "Nền tảng nghiên cứu đầu-cuối: crawler → tín hiệu → xếp hạng → bot Telegram.",
+      "metric": "1.863 ngày giao dịch dữ liệu",
+      "cta": "Xem hệ thống"
+    },
+    "ai": {
+      "title": "Giải pháp AI",
+      "line": "Tư vấn và sản phẩm AI ứng dụng: RAG tutor, news engine, quoting doanh nghiệp.",
+      "metric": "5 dự án đã triển khai",
+      "cta": "Xem AI"
+    },
+    "teach": {
+      "title": "Giảng dạy",
+      "line": "Giảng viên tài chính: tác giả giáo trình CFA, nền tảng luyện thi, hội thảo sau đại học.",
+      "metric": "7+ track thi · nền tảng đang hoạt động",
+      "cta": "Xem giảng dạy"
+    }
+  },
   "research": { "title": "Nghiên cứu" },
   "engine": { "title": "Hệ thống phân tích" },
   "aiSolutions": { "title": "Giải pháp AI" },
