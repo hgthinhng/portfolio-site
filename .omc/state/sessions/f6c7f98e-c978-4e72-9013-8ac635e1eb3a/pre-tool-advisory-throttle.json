@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "entries": {
+    "79a93d4a2f8f50b95f852280616242fee1855dc99a3c75211917f55e72e95fae": {
+      "last_emitted_at_ms": 1782654603896,
+      "message": "Use parallel execution for independent tasks. Use run_in_background for long operations (npm install, builds, tests)."
+    },
+    "96c5dfc242a31e636c9b56e8fd856cc0a47c395f2a0f711933d8a688c7e9e0f0": {
+      "last_emitted_at_ms": 1782654543463,
+      "message": "Spawning agent: unknown (sonnet) | Task: Task 0.4: next-intl en/vi routing + middleware + messages"
+    },
+    "466399dafa2d20f60587180bad0a07358eb7f2bce724df0ff682f038ad33f5ad": {
+      "last_emitted_at_ms": 1782654408503,
+      "message": "Read multiple files in parallel when possible for faster analysis."
+    },
+    "7b1fd86f91176593c2d1d8f1859551411912a6516a77debdaf54a20c708e1845": {
+      "last_emitted_at_ms": 1782654404928,
+      "message": "Spawning agent: unknown (haiku) | Task: Task 0.3 reviewer: verify design tokens + fonts spec compliance"
+    },
+    "445ed27a3872b681d98190bae61ccb84954e1bc4e140df5370be958dee776b3a": {
+      "last_emitted_at_ms": 1782654357254,
+      "message": "Verify changes work after editing. Test functionality before marking complete."
+    },
+    "595fae326a7eaea0999b941d461bf554c900e9aebe57752b4f39011da5f61866": {
+      "last_emitted_at_ms": 1782654282664,
+      "message": "Spawning agent: unknown (sonnet) | Task: Task 0.3: Design tokens + Geist/Source Serif fonts"
+    },
+    "8dab681df75142e7893bbda2d823758b4000ebb7a5facf7e3c331aedaa346b06": {
+      "last_emitted_at_ms": 1782654194766,
+      "message": "Spawning agent: unknown (haiku) | Task: Task 0.2 reviewer: verify clean baseline spec compliance"
+    },
+    "9e2d13c5f16bc9af30ad929f3efde66374b8b95b4f6e726758ea394c57f96c50": {
+      "last_emitted_at_ms": 1782654094499,
+      "message": "Spawning agent: unknown (sonnet) | Task: Task 0.2: Strip starter boilerplate + verify version pins"
+    },
+    "94a73c42a631138d2dde1ad5f6c7412dc33767deefe7fea7fb0e356decb28ef1": {
+      "last_emitted_at_ms": 1782653994543,
+      "message": "Spawning agent: unknown (haiku) | Task: Task 0.1 reviewer: verify scaffold spec compliance"
+    }
+  },
+  "updated_at": "2026-06-28T13:50:03.896Z"
+}

@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"rtk ls /home/hgthinhng/stoix-read/i18n/ && echo \\\"---\\\" && rtk read /home/hgthinhng/stoix-read/i18n/routing.ts 2>/dev/null && echo \\\"---\\\" && rtk read /home/hgthinhng/stoix-read/middleware...",
+  "error": "Exit code 1\nrequest.ts  414B\nrouting.ts  647B\n---\nimport { defineRouting } from 'next-intl/routing';\n// localeDetection:false — the default-locale path '/' must ALWAYS serve vi. With detection\n// on, next-intl redirects '/' to the Accept-Language / NEXT_LOCALE-cookie locale, so an\n// English-browser visitor (or anyone who once viewed /en) is bounced from '/' back to\n// '/en' — which made the VI⇄EN switch look broken (\"clicking VI just reloads to EN\").\n// The switch is explicit here, so detection...",
+  "timestamp": "2026-06-28T13:47:21.551Z",
+  "retry_count": 1
+}
