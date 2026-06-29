@@ -25,7 +25,7 @@ export function SiteHeader() {
           ? "bg-bg/95 backdrop-blur-sm border-b border-white/5"
           : "",
       ].join(" ")}
-      animate={{ height: scrolled ? 46 : 56 }}
+      animate={{ height: scrolled ? 44 : 64 }}
       transition={
         prefersReduced
           ? { duration: 0 }
@@ -35,8 +35,11 @@ export function SiteHeader() {
       <div className="max-w-6xl mx-auto px-6 h-full flex items-center justify-between">
         <a
           href="#"
-          className="font-mono text-base font-semibold text-copper tracking-widest hover:opacity-80 transition-opacity"
-          aria-label="Hung Thinh Nguyen — home"
+          className={[
+            "font-mono font-semibold text-copper tracking-widest origin-left transition-all duration-300 hover:opacity-80 motion-reduce:transition-none",
+            scrolled ? "text-sm" : "text-base",
+          ].join(" ")}
+          aria-label="HT, Hung Thinh Nguyen, home"
         >
           HT
         </a>

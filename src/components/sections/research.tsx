@@ -16,18 +16,20 @@ export async function ResearchSection({ locale }: { locale: string }) {
         <p className="text-muted max-w-2xl mb-12 leading-relaxed">{t('intro')}</p>
       </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-        {/* Card 1 — Ngư Ông Đắc Lợi */}
-        <Reveal delay={0}>
-          <div className="bg-surface border border-white/[0.06] rounded-sm p-6 flex flex-col h-full hover:border-copper/20 transition-colors duration-200">
-            <p className="font-mono text-xs text-copper/70 mb-3">Macro · 2025</p>
-            <h3 className="text-base font-semibold text-fg mb-2">Ngư Ông Đắc Lợi</h3>
-            <p className="text-sm text-muted leading-relaxed flex-1">
-              Russia as third-party beneficiary of US-Israel-Iran war: oil flows and fiscal impact.
-            </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+        {/* Card 1 — Ngư Ông Đắc Lợi (featured, spans full width) */}
+        <Reveal delay={0} className="md:col-span-2">
+          <div className="bg-surface border border-white/[0.06] rounded-sm p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-5 md:gap-8 h-full hover:border-copper/20 transition-colors duration-200">
+            <div className="md:flex-1">
+              <p className="font-mono text-xs text-copper/70 mb-3">Macro · 2025 · Featured</p>
+              <h3 className="text-xl md:text-2xl font-semibold text-fg mb-2">Ngư Ông Đắc Lợi</h3>
+              <p className="text-sm text-muted leading-relaxed">
+                Russia as third-party beneficiary of US-Israel-Iran war: oil flows and fiscal impact.
+              </p>
+            </div>
             <Link
               href="/research/ngu-ong-dac-loi"
-              className="mt-5 text-xs text-copper hover:text-copper/70 transition-colors duration-150"
+              className="shrink-0 text-xs text-copper hover:text-copper/70 transition-colors duration-150"
             >
               {t('readCaseStudy')}
             </Link>
