@@ -29,7 +29,7 @@ export async function ResearchSection({ locale }: { locale: string }) {
               href="/research/ngu-ong-dac-loi"
               className="mt-5 text-xs text-copper hover:text-copper/70 transition-colors duration-150"
             >
-              Read case study →
+              {t('readCaseStudy')}
             </Link>
           </div>
         </Reveal>
@@ -48,7 +48,7 @@ export async function ResearchSection({ locale }: { locale: string }) {
               rel="noopener noreferrer"
               className="mt-5 text-xs text-copper hover:text-copper/70 transition-colors duration-150"
             >
-              Read publication →
+              {t('readPublication')}
             </a>
           </div>
         </Reveal>
@@ -62,7 +62,7 @@ export async function ResearchSection({ locale }: { locale: string }) {
               1,805-day neutralized backtest of VN microstructure factors. Real information signal,
               not net-positive long-only alpha at realistic cost; reframed as risk/state signal.
             </p>
-            <span className="mt-5 text-xs text-muted/40 font-mono">Coming soon</span>
+            <span className="mt-5 text-xs text-muted/40 font-mono">{t('comingSoon')}</span>
           </div>
         </Reveal>
       </div>
@@ -73,7 +73,7 @@ export async function ResearchSection({ locale }: { locale: string }) {
             href="/research"
             className="text-sm text-fg hover:text-copper transition-colors duration-150"
           >
-            See all writing →
+            {t('seeAllWriting')}
           </Link>
           <a
             href="https://stoix-read.vercel.app"
@@ -81,7 +81,7 @@ export async function ResearchSection({ locale }: { locale: string }) {
             rel="noopener noreferrer"
             className="text-sm text-fg hover:text-copper transition-colors duration-150"
           >
-            Read full publication →
+            {t('readFull')}
           </a>
         </div>
       </Reveal>
